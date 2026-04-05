@@ -12,7 +12,7 @@ all_files = [
     (label, file)
     for label in labels
     for file in os.listdir(os.path.join(DATASET_PATH, label))
-    if file.endswith(".mp3")
+    if file.endswith((".mp3", ".wav"))
 ]
 
 for label, file in tqdm(all_files, desc="Extracting features", unit="track"):

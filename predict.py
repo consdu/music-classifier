@@ -8,10 +8,10 @@ PREDICT_FOLDER = "predict"
 
 model = joblib.load("model.pkl")
 
-files = [f for f in os.listdir(PREDICT_FOLDER) if f.endswith(".mp3")]
+files = [f for f in os.listdir(PREDICT_FOLDER) if f.endswith((".mp3", ".wav"))]
 
 if not files:
-    print("No MP3 files found in the 'predict' folder.")
+    print("No MP3/WAV files found in the 'predict' folder.")
     exit(0)
 
 results = []
