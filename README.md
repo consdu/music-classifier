@@ -67,3 +67,7 @@ track_a.mp3       peak          91.40%
 track_b.mp3       starters      78.20%
 track_c.mp3       middleground  65.00%
 ```
+
+## Note
+
+The categories (starters, middleground, peak) are dynamic and can be adjusted to fit your own moods or classification needs. Simply rename or add folders inside `data/`, update labels in `build_dataset.py`, label your tracks accordingly, and retrain the model.
