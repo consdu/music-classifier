@@ -3,6 +3,7 @@ __pycache__/
 *.pyc
 .DS_Store
 dataset.csv
+predict.csv
 model.pkl
 data/
 predict/
